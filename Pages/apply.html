@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="Stylesheet" href="styles/applystyles.css">
+   <meta charset="utf-8" />
+   <meta name="description" content=" job application form with HTML5 validation, 
+                                    using patterns or regular expressions where applicable, 
+                                    and appropriate input types for each field." />
+   <meta name="keywords" content="HTML5, tags" />
+   <meta name="author" content="Callum Rochfort"  />
+   <title>HTML Structure and Content Elements + CSS</title> 
+</head>
+<!-- This is a comment. Indenting child elements makes the markup much more readable -->
+<body>
+   <header>
+     <h1>Smart City Infrastructure Consultancy</h1>
+     <nav>
+         <a href="#headings">Job Reference number</a>
+         <a href="#firstname">Name and Date of Birth</a>
+         <a href="#gender">Gender and Citizenship Status</a>
+         <a href="#street">Address Information</a>
+         <a href="#phonenumber">Contact Details</a>
+         <a href="#keyskill1">Skills Information</a>
+      </nav>
+      <hr />
+   </header>
+   
+   <article>   
+   <h2>About Us</h2> 
+      <aside>
+         <p>A consultancy organisation working with councils and industry partners to develop digital platforms for smart transport, energy monitoring, and urban services management.</p>
+      </aside>
+
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
+	<h2 id="headings">Applicant Details </h2>
+   <p><label for="jobref">Job Reference Number</label> 
+		<input type="text" name= "jobref" id="jobref" minlength="5" maxlength="5" required="required"/>
+	</p>
+	<fieldset>
+		<legend>Applicant Information Details</legend>
+		<p><label for="firstname">First Name</label> 
+			<input type="text" name= "firstname" id="firstname" maxlength="20" size="20" required="required"/>
+		</p>
+      <p><label for="lastname">Last Name</label> 
+			<input type="text" name= "lastname" id="lastname" maxlength="20" size="20" required="required"/>
+		</p>
+		<p><label for="gender">Gender</label> 
+			<select name="gender" id="gender">
+				<option value="female">Female</option>			
+				<option value="male">Male</option>
+				<option value="other">Other</option>
+				<option value="prefernot">Prefer not to Say</option>
+			</select>
+		</p>
+		<p><label for="dob">Date of Birth</label> 
+			<input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+		</p>
+		<fieldset>
+			<legend>Citizenship and Indigenous Heritage Status</legend>
+			<p><label for="citizen">Australian Citizen</label> 
+				<input type="radio" id="citizen" name="citizenship" value="citizen"/>
+			</p>
+			<p><label for="immigrant">Immigrant</label> 
+				<input type="radio" id="immigrant" name="citizenship" value="immigrant"/>
+			</p>
+         <p><label for="indigenous">Indigenous Australian Status</label> 
+				<input type="checkbox" id="indigenous" name="citizenship" value="indigenous"/>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Address Information</legend>
+			<p>Provide Your Address Information Below</p>
+			<p><label for="street">Street Address</label> 
+				<input type="text" id="street" name="street" maxlength="40" size="30" required="required"/>
+			</p>
+			<p><label for="suburb">Suburb/Town</label> 
+				<input type="text" id="suburb" name="suburb" maxlength="40" size="30" required="required"/>
+			</p>
+			<p><label for="state">State/Territory</label> 
+				<select name="state" id="state">
+               <option value="victoria">VIC</option>
+               <option value="newsouthwales">NSW</option>
+               <option value="queensland">QLD</option>
+               <option value="northernterritory">NT</option>
+               <option value="westernaustralia">WA</option>
+               <option value="southaustralia">SA</option>
+               <option value="tasmania">TAS</option>
+               <option value="australiancapitalterritory">ACT</option>
+            </select>
+			</p>
+         <p><label for="postcode">Postcode</label> 
+				<input type="text" id="postcode" name="postcode" maxlength="4" size="10" required="required"/>
+			</p>
+		</fieldset>
+      <fieldset>
+         <legend>Contact Details</legend>
+         <p>Provide Your Contact Details Below</p>
+         <p><label for="phonenumber">Phone Number</label>
+            <input type="text" id="phonenumber" name="phonenumber" minlength="8" maxlength="12" size="30" required="required">
+         </p>
+         <p><label for="email">Email</label>
+            <input type="email" id="email" name="email" required="required">
+         </p>
+      </fieldset> 
+      <fieldset>
+         <legend>Skills</legend>
+         <p><label for="keyskills">Key Skill 1</label>
+            <input type="checkbox" name="keyskill1" id="keyskill1">
+            <p><label for="keyskills">Key Skill 2</label>
+            <input type="checkbox" name="keyskill2" id="keyskill2">
+            <p><label for="keyskills">Key Skill 3</label>
+            <input type="checkbox" name="keyskill3" id="keyskill3">
+            <p><label for="keyskills">Key Skill 4</label>
+            <input type="checkbox" name="keyskill4" id="keyskill4">
+            <p><label for="keyskills">Key Skill 5</label>
+            <input type="checkbox" name="keyskill5" id="keyskill5">
+         </p>
+         <p><label for="otherskills">Other Skills</label>
+            <textarea id="otherskills" name="otherskills" rows="4" cols="40"></textarea>
+         </p>
+      </fieldset>
+	</fieldset>
+ 
+
+
+	<input type= "submit" value="Register"/>
+	<input type= "reset" value="Reset Form"/>
+</form>
+
+	<footer>
+      <img src="Consultancylogoplaceholder.png" alt="Logo" loading="eager">
+		<p>Applications - Smart City Infrastructure Consultancy</p>
+	</footer>
+</body>
+
+</html>
