@@ -8,7 +8,6 @@ description: Styles for the about.html page
 
 /* General Styling */
 
-<<<<<<< HEAD
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -263,8 +262,6 @@ address {
         padding: 10px 8px;
     }
 }
-=======
->>>>>>> 086f218f9c06a4f7abb1f727273c8080712c0da5
 
 /* still figuring this part out 
 .theme-a {
