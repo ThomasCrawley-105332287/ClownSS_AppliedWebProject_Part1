@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="Stylesheet" href="Styles/MainStylesheet.css">
-   <link rel="Stylesheet" href="Styles/apply-styles.css">
-   <meta charset="utf-8" />
+   <link rel="Stylesheet" href="../Styles/MainStylesheet.css">
+   <link rel="Stylesheet" href="../Styles/apply-styles.css">
+   <meta charset="utf-8"/>
    <meta name="description" content=" job application form with HTML5 validation, 
                                     using patterns or regular expressions where applicable, 
                                     and appropriate input types for each field." />
@@ -14,16 +14,23 @@
 <!-- This is a comment. Indenting child elements makes the markup much more readable -->
 <body>
    <header>
-     <h1>Smart City Infrastructure Consultancy</h1>
-     <nav>
-         <img src="" title="Company logo" alt="Smart City Logo" loading="eager">
-         <a href="index.html">Home</a>
-         <a href="about.html">About Us</a>
-         <a href="jobs.html">Careers at ClownSS</a>
-      </nav>
-      <hr />
+      <h1>Smart City Infrastructure Consultancy</h1>
+      <div class="nav_elements">
+         <nav>
+            <img src="/Images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager"></image>
+            <a href="/Pages/index.html">Home</a>
+            <a href="/Pages/about.html">About Us</a>
+            <a href="/Pages/jobs.html">Careers at ClownSS</a>
+         </nav>
+      </div>
+      <search style="float: right; padding-right: 5%;">
+         <label id="search_bar_label" for="search_bar">Search Bar</label>
+         <input type="text" placeholder="Search.." id="search_bar">
+         <button type="submit" id="search_bar">Search</button>
+      </search>
+      <hr id="nav_line">
    </header>
-   
+   <div class="nav_space"></div>
    <article>   
    <h2>About Us</h2> 
       <aside>
@@ -56,16 +63,28 @@
 			<input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
 		</p>
 		<fieldset>
-			<legend>Citizenship and Indigenous Heritage Status</legend>
+			<legend>Right to Work Status</legend>
 			<p><label for="citizen">Australian Citizen</label> 
-				<input type="radio" id="citizen" name="citizenship" value="citizen"/>
+				<input type="checkbox" id="citizen" name="citizenship" value="citizen"/>
 			</p>
-			<p><label for="immigrant">Immigrant</label> 
-				<input type="radio" id="immigrant" name="citizenship" value="immigrant"/>
-			</p>
-         <p><label for="indigenous">Indigenous Australian Status</label> 
+
+         <p><label for="indigenous">Indigenous Australian</label> 
 				<input type="checkbox" id="indigenous" name="citizenship" value="indigenous"/>
 			</p>
+
+         <hr>
+
+         <p><label for="work_visa">Work Visa</label> 
+				<select name="work_visa" id="work_visa">
+               <option value="">Select the Appropriate Option</Option>
+               <option value="citizen">Not Applicable</option>
+               <option value="temporary_6_Months">Temporary: 6 Months</option>
+               <option value="temporary_1_Year">Temporary: 1 Year</option>
+               <option value="table">Temporary: 4 Years</option>
+               <option value="permanent_visa">Permanent Work Visa</option>
+            </select>
+			</p>
+
 		</fieldset>
 		<fieldset>
 			<legend>Address Information</legend>
@@ -104,15 +123,15 @@
       </fieldset> 
       <fieldset>
          <legend>Skills</legend>
-         <p><label for="keyskills">Key Skill 1</label>
-            <input type="checkbox" name="keyskill1" id="keyskill1">
-            <p><label for="keyskills">Key Skill 2</label>
-            <input type="checkbox" name="keyskill2" id="keyskill2">
-            <p><label for="keyskills">Key Skill 3</label>
-            <input type="checkbox" name="keyskill3" id="keyskill3">
-            <p><label for="keyskills">Key Skill 4</label>
-            <input type="checkbox" name="keyskill4" id="keyskill4">
-            <p><label for="keyskills">Key Skill 5</label>
+            <p><label for="keyskill1">1+ Years Experience Business Analyst</label>
+               <input type="checkbox" name="keyskill1" id="keyskill1">
+            <p><label for="keyskill2">1+ Years Experience Network Administrator</label>
+               <input type="checkbox" name="keyskill2" id="keyskill2">
+            <p><label for="keyskill3">1+ Years Experience Business Administration</label>
+               <input type="checkbox" name="keyskill3" id="keyskill3">
+            <p><label for="keyskill4">1+ Years Experience Civic Planning</label>
+               <input type="checkbox" name="keyskill4" id="keyskill4">
+            <p><label for="keyskill5">1+ Years Experience Stakeholder Relations Management</label>
             <input type="checkbox" name="keyskill5" id="keyskill5">
          </p>
          <p><label for="otherskills">Other Skills</label>
@@ -128,7 +147,7 @@
 </form>
 
 	<footer>
-      <a href="">Jira Link</a> 
+      <a href="https://clownss.atlassian.net/jira/software/projects/CAWPP1/boards/1">Jira Link</a> 
       <a href="https://github.com/ThomasCrawley-105332287/ClownSS_AppliedWebProject_Part1">GitHub Repository</a>
       <a href="mailto:105332287@student.swin.edu.au">info@companyname.com</a>
 		<p>Applications - Smart City Infrastructure Consultancy</p>
