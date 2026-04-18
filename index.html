@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>ClownSS - Smart City Solutions</title>
+        <link rel="Stylesheet" href="Styles/main_style_sheet.css">
         <meta charset="UTF-8">
         <meta name="Author" content="Thomas Crawley">
         <meta name="Keywords" content="Smart City, ClownSS, Web Development">
@@ -9,53 +10,62 @@
     </head>
     <body>
         <header>
-            <nav>
-                <img src="Images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo">
-                <a href="Pages/index.html">Home</a>
-                <a href="Pages/about.html">About Us</a>
-                <a href="Pages/jobs.html">Careers at ClownSS</a>
-                <search>
-                    <input type="text" placeholder="Search..">
-                    <button type="submit">Search</button>
-                </search>
-            </nav>
+            <h1 id="nav_heading">Smart City Infrastructure Consultancy</h1>
+            <div class="nav_elements">
+                <nav>
+                    <img src="/Images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager">
+                    <a href="Pages/index.html">Home</a>
+                    <a href="Pages/about.html">About Us</a>
+                    <a href="Pages/jobs.html">Careers at ClownSS</a>
+                </nav>
+            </div>
+            <search style="float: right; padding-right: 5%; padding-top: 5%;">
+                <label id="search_bar_label" for="search_bar">Search Bar</label>
+                <input type="text" placeholder="Search.." id="search_bar">
+                <button type="submit" id="search_bar">Search</button>
+            </search>
+            <hr id="nav_line">
         </header>
+<!-- Creates a space for the nav bar to sit in when the viewport is at the top of the page-->
+        <div class="nav_space"></div>
         <!--Placeholder Table-->
-        <table>
-            <tr>
-                <td>
-                    <p>R1C1</p>
-                </td>
-                <td>
-                    <p>R1C2</p>
-                </td>
-                <td>
-                    <p>R1C3</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>R2C1</p>
-                </td>
-                <td>
-                    <p>R2C2</p>
-                </td>
-                <td>
-                    <p>R2C3</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>R3C1</p>
-                </td>
-                <td>
-                    <p>R3C2</p>
-                </td>
-                <td>
-                    <p>R3C3</p>
-                </td>
-            </tr>
-        </table>
+
+            <table>
+                <tr>
+                    <td>
+                        <p>R1C1</p>
+                    </td>
+                    <td>
+                        <p>R1C2</p>
+                    </td>
+                    <td>
+                        <p>R1C3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>R2C1</p>
+                    </td>
+                    <td>
+                        <p>R2C2</p>
+                    </td>
+                    <td>
+                        <p>R2C3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>R3C1</p>
+                    </td>
+                    <td>
+                        <p>R3C2</p>
+                    </td>
+                    <td>
+                        <p>R3C3</p>
+                    </td>
+                </tr>
+            </table>
+
     </body>
     <footer>
         <p>

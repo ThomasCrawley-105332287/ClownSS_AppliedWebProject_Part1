@@ -6,31 +6,28 @@ last modified: 16/04/2026
 description: This is the application page specific styling.
 */
 
-body {
-    background-color: rgb(255, 255, 255);
-}
-
+/*
 h1 { 
     color: rgba(0, 255, 234, 0.767); 
     font-size: 2rem; 
     font-weight: bold; 
 }
   
- * { font-family: calibri, sans-serif; }     
+* { font-family: calibri, sans-serif; }     
 
- * {
+* {
     color: #000000;
- }
+}
 
- h2 {
+h2 {
     color: rgba(0, 67, 70, 0.661);
     font-size: 1.5rem;
- }
+}
 
 aside, footer { font-style: italic; }     
 
 h1, h2, h3 { font-family: arial, sans-serif; }
-
+*/
 #search_bar_label {
     color: aquamarine;
 }
@@ -84,12 +81,3 @@ legend {
     font-size: 1rem;
     font-weight: bold;
 }
-
-nav a {
-    text-decoration: none;
-    padding:0.2rem 0.6rem;
-    border: 0.2rem solid #00d0ff;
-    background-color: rgb(255, 204, 0);
-    position: relative;
-    top: -0.6rem;
-} 

@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="..\Styles\main_style_sheet.css">
+    <link rel="stylesheet" href="..\Styles\about-styles.css">
     <meta charset="UTF-8">
     <meta name="description" content="About page for website, providing general information regarding the group, and member contributions.">
     <meta name="keywords" content="Smart City, ClownSS, Web Development, HTML, Hover effects, styled table, bordered figure">
     <meta name="author" content="Jack Goodsell">
     <title>About.html</title>
 </head>
-<link rel="stylesheet" href="..\styles\about-styles.css">
+
 <body>
     <header>
-        <img src="../images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo">
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="jobs.html">Careers at ClownSS</a>
-        </nav>
+        <h1 id="nav_heading">Smart City Infrastructure Consultancy</h1>
+        <div class="nav_elements">
+            <nav>
+                <img src="../images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="jobs.html">Careers at ClownSS</a>
+            </nav>
+        </div>
+            <search style="float: right; padding-right: 5%; padding-top: 5%;">
+                <label id="search_bar_label" for="search_bar">Search Bar</label>
+                <input type="text" placeholder="Search.." id="search_bar">
+                <button type="submit" id="search_bar">Search</button>
+            </search>
+            <hr id="nav_line">
     </header>
-    
+
+<!-- Creates a space for the nav bar to sit in when the viewport is at the top of the page-->
+    <div class="nav_space"></div>
+
     <main>
         <p></p>
 

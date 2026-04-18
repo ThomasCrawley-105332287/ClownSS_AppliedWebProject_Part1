@@ -11,15 +11,26 @@
     </head>
     <body>
         <header>
-            <nav>
-                <h1>Smart City Infrastructure Consultancy</h1>
-                <img src="" title="Company logo" alt="Smart City Logo">
-                <a href="../index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="jobs.html">Careers at ClownSS</a>
-            </nav>
-            <hr>
+            <h1 id="nav_heading">Smart City Infrastructure Consultancy</h1>
+            <div class="nav_elements">
+                <nav>
+                    <img src="/Images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager"></image>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="jobs.html">Careers at ClownSS</a>
+                </nav>
+            </div>
+            <search style="float: right; padding-right: 5%; padding-top: 5%;">
+                <label id="search_bar_label" for="search_bar">Search Bar</label>
+                <input type="text" placeholder="Search.." id="search_bar">
+                <button type="submit" id="search_bar">Search</button>
+            </search>
+            <hr id="nav_line">
         </header>
+
+<!-- Creates a space for the nav bar to sit in when the viewport is at the top of the page-->
+        <div class="nav_space"></div>
+
         <main>
         <!-- general page infomation -->
             <aside>
