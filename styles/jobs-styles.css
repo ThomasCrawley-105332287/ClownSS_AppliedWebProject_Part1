@@ -13,7 +13,9 @@ description: This is the style page for jobs.html
 
 section h2 {
     color: #2c3e50;
-    
+    margin-bottom: 15px;
+    border-bottom: 0px solid #3498db00;
+    padding-bottom: 10px;
 }
 
 #jobheader {
