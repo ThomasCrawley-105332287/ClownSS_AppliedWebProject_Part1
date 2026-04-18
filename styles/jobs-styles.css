@@ -6,9 +6,59 @@ last modified: 16/04/2026
 description: This is the style page for jobs.html
 */
 #applybutton {
-
-    
+    clear: both;
     justify-self: center;
     border-style: groove;
 }
 
+section h2 {
+    color: #2c3e50;
+    
+}
+
+#jobheader {
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+#responsibilities {
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    padding: 20px;
+}
+
+#salary {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: small;
+    float: right;
+    padding: 5px;
+    margin-top: 0px;
+    background-color: #cdf1ff8c;
+    border-left: 4px solid #3498db;
+}
+
+/* this overrides the aside p colour change in main style sheet */
+#salary p {
+    color: black;
+}
+/* the width makes it so these two sections float next to each other */
+#reqessential {
+    padding: 10px;
+    padding-left: 40px;
+    float: left;
+    width: 48%;
+    border-left: 4px solid #429b34;
+}
+
+#reqpreferable {
+    padding: 10px;
+    padding-left: 40px;
+    float: right;
+    width: 48%;
+    border-left: 4px solid #c8b100;
+
+}
