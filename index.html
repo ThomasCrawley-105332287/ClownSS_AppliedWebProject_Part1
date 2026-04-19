@@ -12,19 +12,23 @@
     <body>
         <header>
             <h1 id="nav_heading">Smart City Infrastructure Consultancy</h1>
-            <div class="nav_elements">
-                <nav>
-                    <img src="/images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager">
-                    <a href="index.html">Home</a>
-                    <a href="pages/about.html">About Us</a>
-                    <a href="pages/jobs.html">Careers at ClownSS</a>
-                </nav>
+            <div class="nav_bar">
+                <div class="nav_elements">
+                    <nav>
+                        <img src="images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager">
+                        <a id="home_link" href="index.html">Home</a>
+                        <a href="pages/about.html">About Us</a>
+                        <a href="pages/jobs.html">Careers at ClownSS</a>
+                    </nav>
+                </div>
+                <div>
+                    <search id="search_bar_container">
+                    <label id="search_bar_label" for="search_bar">Search Bar</label>
+                    <input type="text" placeholder="Search.." id="search_bar">
+                    <button type="submit" id="search_bar">Search</button>
+                    </search>
+                </div>
             </div>
-            <search id="search_bar_container">
-                <label id="search_bar_label" for="search_bar">Search Bar</label>
-                <input type="text" placeholder="Search.." id="search_bar">
-                <button type="submit" id="search_bar">Search</button>
-            </search>
             <hr id="nav_line">
         </header>
 <!-- Creates a space for the nav bar to sit in when the viewport is at the top of the page-->
@@ -69,10 +73,11 @@
 
     </body>
     <footer>
-        <p>
-            <a href="">Jira Link</a> 
-            <a href="https://github.com/ThomasCrawley-105332287/ClownSS_AppliedWebProject_Part1">GitHub Repository</a>
-            <a href="mailto:105332287@student.swin.edu.au">info@companyname.com</a>
-        </p>
+            <p>&copy; 2026 ClownSS. All rights reserved.</p>
+            <a href="about.html" target="_self" title="Go to Top of the page"  hreflang="en">Click here to go to the top of the page</a>
+            <br>
+            <address><p>Contact us at: <a href="mailto:106016142@student.swin.edu.au">106016142@student.swin.edu.au</a></p></address>
+            <p> Should we make an extra page? </p>
+            <a href="#privacy">Privacy Policy</a>
     </footer>
 </html>

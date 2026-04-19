@@ -25,6 +25,15 @@ description: This is the style page for jobs.html
 #applybutton a:hover {
     color: #3498db;
 }
+
+#apply_link{
+    border-radius: 8px 8px 0px 0px;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    color: rgb(3, 42, 56);
+    padding-bottom: 3%;
+}
+
 /* makes the numbers in the ordered list bold */
 ol li::marker {
   font-weight: bold;

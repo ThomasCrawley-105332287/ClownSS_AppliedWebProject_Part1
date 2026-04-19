@@ -5,49 +5,20 @@ created: 12/04/2026
 last modified: 12/04/2026
 description: This is the main styling that applies to all pages.
 */
-/*
-    img.logo{
-        place-self:left;
-        width: 20%;
-        height: 20%;
-    }
-
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-        line-height: 1.6;
-    }
-
-    /* Header Styling *//*
-    header {
-        background-color: #2c3e50;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
-        margin-bottom: 15px;
-        font-size: 2.5em;
-    }
-*/
-
 /* Navigation menu styling */
 
 #search_bar_label {
     color: white;
-    margin-right: 0.5%;
+    margin-right: 5%;
+    text-align: right;
 }
 
 #search_bar_container {
-    display: flex;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: 33% 52% 15%;
+    align-content: flex-end;
+    margin-top: 2em;
     max-height: 2rem;
-    align-self: flex-end;
-    margin-bottom: 1%;
-    margin-right: 3%;
 }
 
 header {
@@ -85,13 +56,17 @@ div.nav_space {
 }
 
 div.nav_elements {
-    display: flex;
+    display: grid;
     padding: 0.1rem;
-    margin-bottom: 0rem;
-    justify-content: center;
+    justify-content: end;
     max-height: 10%;
 }
 
+div.nav_bar{
+    display: grid;
+    grid-template-columns: 66% 34%;
+    border-bottom: solid 8px #f5f5f5;
+}
 
 img {
     align-self: start;
@@ -115,21 +90,7 @@ nav a {
     border-radius: 8px;
     position: relative;
     top: -0.6rem;
-    color: #ffffff;
-}
-
-/*
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    padding:0.2rem 0.6rem;
-    border: 0.2rem solid #00d0ff;
-}
-
-nav a:hover {
-    color: #3498db;
+    color: #f5f5f5;
 }
 
 /* Main Content */
@@ -157,52 +118,6 @@ h2 {
     border-bottom: 3px solid #3498db;
     padding-bottom: 10px;
 }
-
-/* Student ID Styling */
-/*.student-id {
-    background-color: #e74c3c;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.9em;
-    display: inline-block;
-    margin: 5px 0;
-    box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
-    transition: all 0.3s ease;
-}
-
-.student-id:hover {
-    background-color: #c0392b;
-    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.5);
-    transform: translateY(-2px);
-}*/
-
-/* Figure Styling with Border */
-/*figure {
-    border: 3px solid #3498db;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: #ecf0f1;
-    text-align: center;
-    margin: 1rem;
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-figcaption {
-    color: #2c3e50;
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 10px;
-}*/
 
 /* Table Styling */
 table {
