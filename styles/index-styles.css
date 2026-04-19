@@ -1,0 +1,12 @@
+/*
+filename: index-styles.css
+author: Thomas Crawley, Jack Goodsell, Alex Hall, Callum Rochfort
+created: 19/04/2026
+last modified: 19/04/2026
+description: the style page for index.html
+*/
+
+/* fixes header not reaching end of page! will move some stuff slighlty but easy to fix for you. - Alex Hall */
+* {
+    margin: 0;
+}

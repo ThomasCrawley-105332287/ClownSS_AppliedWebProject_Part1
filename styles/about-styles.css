@@ -263,6 +263,11 @@ address {
     }
 }
 
+/* fixes header not reaching end of page! will move some stuff slighlty but easy to fix for you. - Alex Hall */
+* {
+    margin: 0;
+}
+
 /* still figuring this part out 
 .theme-a {
   background: #ddccaa;

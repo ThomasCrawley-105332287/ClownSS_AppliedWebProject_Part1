@@ -25,7 +25,7 @@ a {
 a:hover {
     color: #3498db;
 }
-
+/* makes the numbers in the ordered list bold */
 ol li::marker {
   font-weight: bold;
 }
@@ -97,7 +97,7 @@ aside {
     background-color: #fff3cd;
     border-left: 4px solid #ffc107;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 0px;
     border-radius: 5px;
     margin-bottom: 50px;
 }
@@ -125,6 +125,5 @@ body {
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }

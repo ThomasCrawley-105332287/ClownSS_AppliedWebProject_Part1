@@ -28,6 +28,8 @@ aside, footer { font-style: italic; }
 
 h1, h2, h3 { font-family: arial, sans-serif; }
 */
+
+/* You don't need this code since it's in the main style sheet already! - Alex Hall
 #search_bar_label {
     color: aquamarine;
 }
@@ -81,3 +83,12 @@ legend {
     font-size: 1rem;
     font-weight: bold;
 }
+*/
+
+/* fixes the gap in the header, but it also pushes your text closer together for some reason so you may need to fix that. I tried to find a work around but couldn't, SORRY! - Alex Hall*/
+* {
+    margin: 0;
+}
+
+
+
