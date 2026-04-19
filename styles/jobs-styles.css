@@ -6,15 +6,34 @@ last modified: 16/04/2026
 description: This is the style page for jobs.html
 */
 #applybutton {
+    /* the clear function lets the button sit center and not get effected by floats*/
     clear: both;
     justify-self: center;
-    border-style: groove;
+    background-color: #d7d7d78c;
+    border-left: 4px solid #3498db;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* this changes hyperlink style */
+a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+/* changes hyperlink colour when hovered */
+a:hover {
+    color: #3498db;
+}
+
+ol li::marker {
+  font-weight: bold;
 }
 
 section h2 {
     color: #2c3e50;
     margin-bottom: 15px;
-    border-bottom: 0px solid #3498db00;
+    border-bottom: 0px solid #3498db;
     padding-bottom: 10px;
 }
 
@@ -41,6 +60,7 @@ section h2 {
     margin-top: 0px;
     background-color: #cdf1ff8c;
     border-left: 4px solid #3498db;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* this overrides the aside p colour change in main style sheet */
@@ -63,4 +83,41 @@ section h2 {
     width: 48%;
     border-left: 4px solid #c8b100;
 
+}
+
+/* Everything below here is copied from the old main style sheet since it got removed and my page relied on it. */
+aside {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
