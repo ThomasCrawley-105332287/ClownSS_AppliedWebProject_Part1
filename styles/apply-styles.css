@@ -87,8 +87,7 @@ legend {
 
 /* fixes the gap in the header, but it also pushes your text closer together for some reason so you may need to fix that. I tried to find a work around but couldn't, SORRY! - Alex Hall*/
 * {
-    margin: 0;
+    margin-left: 0;
 }
-
 
 
