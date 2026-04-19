@@ -37,7 +37,7 @@ description: This is the main styling that applies to all pages.
 /* Navigation menu styling */
 
 #search_bar_label {
-    color: aquamarine;
+    color: white;
     margin-right: 0.5%;
 }
 
@@ -65,7 +65,7 @@ header {
 }
 
 #nav_heading {
-    color: rgba(0, 255, 234, 0.767); 
+    color: rgb(255, 255, 255); 
     font-size: 2rem; 
     font-weight: bold;
     text-align: center;
@@ -110,11 +110,12 @@ legend {
 nav a {
     text-decoration: none;
     padding:0.2rem 0.6rem;
-    border: 0.2rem solid #00d0ff;
+    border: 0.2rem solid #ffffff;
     background-color:#013342;
+    border-radius: 8px;
     position: relative;
     top: -0.6rem;
-    color: #00d0ff;
+    color: #ffffff;
 }
 
 /*

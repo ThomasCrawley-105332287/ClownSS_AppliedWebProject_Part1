@@ -17,12 +17,12 @@ description: This is the style page for jobs.html
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 /* this changes hyperlink style */
-a {
+#applybutton a {
     text-decoration: none;
     color: #3b3b3b;
 }
 /* changes hyperlink colour when hovered */
-a:hover {
+#applybutton a:hover {
     color: #3498db;
 }
 /* makes the numbers in the ordered list bold */
@@ -100,6 +100,7 @@ aside {
     margin-top: 0px;
     border-radius: 5px;
     margin-bottom: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 section {
