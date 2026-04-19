@@ -10,3 +10,11 @@ description: the style page for index.html
 * {
     margin: 0;
 }
+
+#home_link{
+    border-radius: 8px 8px 0px 0px;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    color: rgb(3, 42, 56);
+    padding-bottom: 3%;
+}

@@ -13,19 +13,23 @@
 <body>
     <header>
         <h1 id="nav_heading">Smart City Infrastructure Consultancy</h1>
-        <div class="nav_elements">
-            <nav>
-                <img src="../images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo">
-                <a href="../index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="jobs.html">Careers at ClownSS</a>
-            </nav>
-        </div>
-            <search id="search_bar_container"> <!-- made an id for the style sheet -->
-                <label id="search_bar_label" for="search_bar">Search Bar</label>
-                <input type="text" placeholder="Search.." id="search_bar">
-                <button type="submit" id="search_bar">Search</button>
-            </search>
+        <div class="nav_bar">
+                <div class="nav_elements">
+                    <nav>
+                        <img src="../images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager">
+                        <a href="../index.html">Home</a>
+                        <a id="about_link" href="about.html">About Us</a>
+                        <a href="jobs.html">Careers at ClownSS</a>
+                    </nav>
+                </div>
+                <div>
+                    <search id="search_bar_container">
+                    <label id="search_bar_label" for="search_bar">Search Bar</label>
+                    <input type="text" placeholder="Search.." id="search_bar">
+                    <button type="submit" id="search_bar">Search</button>
+                    </search>
+                </div>
+            </div>
             <hr id="nav_line">
     </header>
 

@@ -9,16 +9,16 @@ description: This is the main styling that applies to all pages.
 
 #search_bar_label {
     color: white;
-    margin-right: 0.5%;
+    margin-right: 5%;
+    text-align: right;
 }
 
 #search_bar_container {
-    display: flex;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: 33% 52% 15%;
+    align-content: flex-end;
+    margin-top: 2em;
     max-height: 2rem;
-    align-self: flex-end;
-    margin-bottom: 1%;
-    margin-right: 3%;
 }
 
 header {
@@ -56,13 +56,17 @@ div.nav_space {
 }
 
 div.nav_elements {
-    display: flex;
+    display: grid;
     padding: 0.1rem;
-    margin-bottom: 0rem;
-    justify-content: center;
+    justify-content: end;
     max-height: 10%;
 }
 
+div.nav_bar{
+    display: grid;
+    grid-template-columns: 66% 34%;
+    border-bottom: solid 8px #f5f5f5;
+}
 
 img {
     align-self: start;
@@ -86,7 +90,7 @@ nav a {
     border-radius: 8px;
     position: relative;
     top: -0.6rem;
-    color: #ffffff;
+    color: #f5f5f5;
 }
 
 /* Main Content */
