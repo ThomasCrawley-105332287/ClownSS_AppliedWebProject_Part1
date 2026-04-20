@@ -66,6 +66,21 @@ td.sector{
     border-right: solid 2px #2c3e50;
 }
 
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
 aside{
     padding: 20px;
     border-radius: 8px;
