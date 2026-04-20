@@ -56,10 +56,9 @@ div.nav_space {
 }
 
 div.nav_elements {
-    display: grid;
+    display: inline-grid;
     padding: 0.1rem;
     justify-content: end;
-    max-height: 10%;
 }
 
 div.nav_bar{
@@ -220,6 +219,7 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 footer p {
