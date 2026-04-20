@@ -19,6 +19,7 @@ description: the style page for index.html
     padding-bottom: 3%;
 }
 
+<<<<<<< HEAD
 #sector{
     border: solid 2px #2c3e50;
 }
@@ -106,3 +107,42 @@ table tbody tr:hover td {
 @keyframes hoverTab{
 
 }
+=======
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+aside {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 20px;
+    margin-top: 0px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: end;
+    display: inline-flex;
+    float: right;
+}
+
+main h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+>>>>>>> 6d3ae4c1a3f09c6d82b5d05c36aada70933faa83

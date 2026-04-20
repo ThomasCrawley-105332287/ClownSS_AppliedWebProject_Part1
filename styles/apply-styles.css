@@ -8,6 +8,10 @@ description: This is the application page specific styling.
 
 /* fixes the gap in the header, but it also pushes your text closer together for some reason so you may need to fix that. I tried to find a work around but couldn't, SORRY! - Alex Hall*/
 * {
+    margin-left: 0;
+}
+
+#nav_heading {
     margin: 0;
 }
 

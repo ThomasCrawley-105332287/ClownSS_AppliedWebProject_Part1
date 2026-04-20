@@ -7,6 +7,18 @@ description: This is the main styling that applies to all pages.
 */
 /* Navigation menu styling */
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;           /* reading spacing between lines */
+}
+
 #search_bar_label {
     color: white;
     margin-right: 5%;
@@ -35,17 +47,19 @@ header {
     line-height: 1.6;
 }
 
+
 #nav_heading {
-    color: rgb(255, 255, 255); 
-    font-size: 2rem; 
+    color: #ffffff;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
-
+    padding: 0.5rem 0 0.25rem;  /* small gap above and below the title */
 }
+
 
 /* removes the nav line without removing it from html files, it looked bad people! - Alex Hall*/
 #nav_line {
-display: none;
+    display: none;
 }
 
 
@@ -69,8 +83,8 @@ div.nav_bar{
 
 img {
     align-self: start;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 65px;
+    max-height: 900px;
     width: auto;
     height: auto;
 }
@@ -90,6 +104,11 @@ nav a {
     position: relative;
     top: -0.6rem;
     color: #f5f5f5;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    border-color: #3498db;
 }
 
 /* Main Content */
@@ -121,7 +140,7 @@ h2 {
 /* Table Styling */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* no double borders between adjacent cells */
     margin-top: 2rem;
 }
 
@@ -247,7 +266,7 @@ address {
     header h1 {
         font-size: 1.8em;
     }
-    
+
     nav ul {
         flex-direction: column;
         gap: 10px;

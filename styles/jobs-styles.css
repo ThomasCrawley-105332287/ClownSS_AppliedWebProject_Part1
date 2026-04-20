@@ -5,7 +5,7 @@ created: 16/04/2026
 last modified: 16/04/2026
 description: This is the style page for jobs.html
 */
-#applybutton {
+.apply_button {
     /* the clear function lets the button sit center and not get effected by floats*/
     clear: both;
     justify-self: center;
@@ -17,12 +17,12 @@ description: This is the style page for jobs.html
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 /* this changes hyperlink style */
-#applybutton a {
+.apply_button a {
     text-decoration: none;
     color: #3b3b3b;
 }
 /* changes hyperlink colour when hovered */
-#applybutton a:hover {
+.apply_button a:hover {
     color: #3498db;
 }
 
@@ -50,23 +50,23 @@ h3 {
     color: #2c3e50;
 }
 
-#jobheader {
+.job_header {
     margin-bottom: 15px;
     border-bottom: 3px solid #3498db;
     padding-bottom: 10px;
 }
 
-#responsibilities {
+.responsibilities {
     margin-bottom: 15px;
     border-bottom: 3px solid #3498db;
     padding-top: 5px;
 }
 
-#responsibilities ol {
+.responsibilities ol {
         padding: 20px;
 }
 
-#salary {
+.salary {
     display: inline-flex;
     flex-direction: column;
     text-align: right;
@@ -77,14 +77,15 @@ h3 {
     background-color: #cdf1ff8c;
     border-left: 4px solid #3498db;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
 }
 
 /* this overrides the aside p colour change in main style sheet */
-#salary p {
+.salary p {
     color: black;
 }
 /* the width makes it so these two sections float next to each other */
-#reqessential {
+.req_essential {
     padding: 10px;
     padding-left: 40px;
     float: left;
@@ -92,7 +93,7 @@ h3 {
     border-left: 4px solid #429b34;
 }
 
-#reqpreferable {
+.req_preferable {
     padding: 10px;
     padding-left: 40px;
     float: right;

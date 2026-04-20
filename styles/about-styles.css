@@ -2,20 +2,50 @@
 filename: about-styles.css
 author: Jack Goodsell
 created: 16/04/2026
-last modified: 19/04/2026
-description: Styles for the about.html page
+last modified: 20/04/2026
+description: Styles specific to about.html only.
+
 */
 
-/* Student ID Styling */
+/* ── Page layout: constrain main width on about page ── */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+* {
+    margin-left: 0;
+}
+
+#nav_heading {
+    margin: 0;
+}
+
+/* ── Active nav link highlight ── */
+#about_link {
+    border-radius: 8px 8px 0 0;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    color: rgb(3, 42, 56);
+    padding-bottom: 3%;
+}
+
+/* ── Student ID badge ── */
 .student-id {
-    background-color: #e74c3c;
+    background-color: #A62517;
     color: white;
-    padding: 8px 12px;
+    padding: 4px 10px;
     border-radius: 20px;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.85em;
     display: inline-block;
-    margin: 5px 0;
+    margin-left: 8px;
+    vertical-align: middle;
     box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
     transition: all 0.3s ease;
 }
@@ -26,31 +56,29 @@ description: Styles for the about.html page
     transform: translateY(-2px);
 }
 
-#about_link{
-    border-radius: 8px 8px 0px 0px;
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
-    color: rgb(3, 42, 56);
-    padding-bottom: 3%;
+/* ── Group photo section ── */
+.group-photo-section {
+    text-align: center;
 }
 
-/* Figure Styling with Border */
-figure {
+.group-photo-figure {
     border: 3px solid #3498db;
     padding: 15px;
     border-radius: 10px;
     background-color: #ecf0f1;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+    max-width: 100%;      
 }
 
-figure img {
+.group-photo-figure img {
+    width: 100%;            
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
 }
 
 figcaption {
@@ -58,153 +86,4 @@ figcaption {
     font-style: italic;
     font-weight: bold;
     margin-top: 10px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table caption {
-    text-align: left;
-    color: #2c3e50;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-table thead {
-    background-color: #2c3e50;
-    color: white;
-}
-
-table th {
-    padding: 15px;
-    text-align: left;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
-
-table td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #bdc3c7;
-}
-
-/* Zebra Striping with Hex Colors */
-table tbody tr:nth-child(odd) {
-    background-color: #ecf0f1;
-}
-
-table tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-/* Hover Effects */
-table tbody tr {
-    transition: all 0.3s ease;
-}
-
-table tbody tr:hover {
-    background-color: #3498db;
-    color: white;
-    box-shadow: inset 0 0 10px rgba(52, 152, 219, 0.2);
-    cursor: pointer;
-}
-
-table tbody tr:hover td {
-    border-bottom-color: #2c3e50;
-}
-
-/* Additional Styling for Definition List */
-dl {
-    margin: 20px 0;
-}
-
-dt {
-    font-weight: bold;
-    color: #2c3e50;
-    margin-top: 15px;
-    font-size: 1.1em;
-}
-
-dd {
-    margin-left: 20px;
-    margin-bottom: 8px;
-    color: #555;
-}
-
-/* Aside Styling */
-aside {
-    background-color: #fff3cd;
-    border-left: 4px solid #ffc107;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 5px;
-}
-
-aside h2 {
-    color: #856404;
-    border-bottom: none;
-}
-
-aside p {
-    color: #856404;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #2ecc71;
-    text-decoration: underline;
-}
-
-address {
-    margin-top: 15px;
-    font-style: normal;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    table {
-        font-size: 0.9em;
-    }
-    
-    table th,
-    table td {
-        padding: 10px 8px;
-    }
-}
-
-/* fixes header not reaching end of page! will move some stuff slighlty but easy to fix for you. - Alex Hall */
-* {
-    margin: 0;
 }

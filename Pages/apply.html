@@ -18,18 +18,26 @@
          <div class="nav_bar">
                 <div class="nav_elements">
                     <nav>
+<<<<<<< HEAD
                         <img id="company_logo" src="../images/ClownSS_Logo1.png" title="Company logo" alt="Smart City Logo" loading="eager">
                         <a id="home_link" href="../index.html">Home</a>
                         <a id="about_link" href="about.html">About Us</a>
                         <a id="jobs_link" href="jobs.html">Careers at ClownSS</a>
                         <a id="apply_link">Application</a>
+=======
+                        <img src="../images/ClownSS_Logo_Simple.png" title="Company logo" alt="Smart City Logo" loading="eager">
+                        <a href="../index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="jobs.html">Careers at ClownSS</a>
+                        <a id="apply_link" href="apply.html">Apply at ClownSS</a>
+>>>>>>> 6d3ae4c1a3f09c6d82b5d05c36aada70933faa83
                     </nav>
                 </div>
                 <div>
                     <search id="search_bar_container">
                     <label id="search_bar_label" for="search_bar">Search Bar</label>
                     <input type="text" placeholder="Search.." id="search_bar">
-                    <button type="submit" id="search_bar">Search</button>
+                    <button type="submit">Search</button>
                     </search>
                 </div>
             </div>
@@ -61,7 +69,7 @@
                   <input type="text" name= "lastname" id="lastname" maxlength="20" size="20" required="required"/>
                </p>
                <p><label for="gender">Gender</label> 
-                  <select name="gender" id="gender">
+                  <select name="gender" id="gender" required="required">
                      <option value="female">Female</option>			
                      <option value="male">Male</option>
                      <option value="other">Other</option>
@@ -69,7 +77,7 @@
                   </select>
                </p>
                <p><label for="dob">Date of Birth</label> 
-                  <input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+                  <input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10" required="required"/>
                </p>
                <fieldset>
                   <legend>Right to Work Status</legend>
@@ -84,7 +92,7 @@
                   <hr>
 
                   <p><label for="work_visa">Work Visa</label> 
-                     <select name="work_visa" id="work_visa">
+                     <select name="work_visa" id="work_visa" required="required">
                         <option value="">Select the Appropriate Option</Option>
                         <option value="citizen">Not Applicable</option>
                         <option value="temporary_6_Months">Temporary: 6 Months</option>
@@ -105,7 +113,7 @@
                      <input type="text" id="suburb" name="suburb" maxlength="40" size="30" required="required"/>
                   </p>
                   <p><label for="state">State/Territory</label> 
-                     <select name="state" id="state">
+                     <select name="state" id="state" required="required">
                         <option value="victoria">VIC</option>
                         <option value="newsouthwales">NSW</option>
                         <option value="queensland">QLD</option>
