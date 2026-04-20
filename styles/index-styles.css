@@ -18,3 +18,91 @@ description: the style page for index.html
     color: rgb(3, 42, 56);
     padding-bottom: 3%;
 }
+
+#sector{
+    border: solid 2px #2c3e50;
+}
+
+#year{
+    border: solid 2px #2c3e50;
+}
+
+#co2{
+    padding: none;
+    background-color: #06678a;
+}
+
+#renuable{
+    background-color: #06678a;
+}
+
+#out{
+    background-color: #06678a;
+}
+
+#ev{
+    background-color: #06678a;
+}
+
+
+#acknowledgement{
+    display: flex;
+}
+
+tr.yoy{
+    text-align: right;
+}
+
+tr.yoy td{
+    border-right: solid 2px #2c3e50;
+    border-bottom: solid 2px #2c3e50;
+}
+
+td.sector{
+    border-right: solid 2px #2c3e50;
+}
+
+aside{
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ffffff;
+}
+
+aside h2{
+    color:rgb(3, 42, 56);
+}
+
+aside p {
+    color:rgb(3, 42, 56);
+}
+
+table{
+    border: solid 4px rgb(3, 42, 56);
+    border-radius: 10px;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+table tbody tr:hover {
+    color: rgb(3, 42, 56);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+table tbody tr:hover td {
+    border-bottom-color: none;
+}
+
+@keyframes hoverTab{
+
+}
